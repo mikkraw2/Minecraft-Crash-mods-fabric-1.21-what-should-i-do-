@@ -1,0 +1,436 @@
+I just updated mods in modrith (fabric 1.21) and my game started crashing what should i do?
+
+
+[16:36:28] [main/INFO]: Loading Minecraft 1.21 with Fabric Loader 0.15.11
+[16:36:28] [main/INFO]: Loading 257 mods:
+	- additionalstructures 5.0.0-fabric
+	- architectury 13.0.2
+	- areas 5.9
+	- armourbundles 1.4.0+1.21
+	- auto-workstations 1.0-rc.25
+	- autowardensubtitles 2.0.3
+	- balm-fabric 21.0.11
+	   \-- kuma_api 21.0.4
+	- bambooeverything 21.0.1+mc1.21
+	- betterthirdperson 1.9.0
+	- bosses_of_mass_destruction 1.10.0-1.21
+	   \-- multipart_entities 1.7-1.21
+	- capes 1.5.4+1.21
+	- cardinal-components 6.1.0
+	   |-- cardinal-components-base 6.1.0
+	   |-- cardinal-components-block 6.1.0
+	   |-- cardinal-components-chunk 6.1.0
+	   |-- cardinal-components-entity 6.1.0
+	   |-- cardinal-components-item 6.1.0
+	   |-- cardinal-components-level 6.1.0
+	   |-- cardinal-components-scoreboard 6.1.0
+	   \-- cardinal-components-world 6.1.0
+	- chunky 1.4.16
+	- cicada 0.8.1+1.21-and-above
+	- cinderscapes 5.0.0
+	   |-- biolith 3.0.0-alpha.1
+	   |-- cinderscapes-client 5.0.0
+	   |-- cinderscapes-common 5.0.0
+	   |-- cinderscapes-worldgen 5.0.0
+	   |-- terraform-biome-remapper-api-v1 11.0.0-alpha.1
+	   |-- terraform-shapes-api-v1 11.0.0-alpha.1
+	   |-- terraform-surfaces-api-v1 11.0.0-alpha.1
+	   \-- terraform-wood-api-v1 11.0.0-alpha.1
+	- cloth-config 15.0.127
+	   \-- cloth-basic-math 0.6.1
+	- collective 7.68
+	- connectiblechains 2.4.1+1.21
+	- copperhopper 0.9.3+1.21
+	- crabclaws 1.1.1
+	- creativecore 2.11.34
+	   \-- net_neoforged_bus 7.2.0
+	- cryingportals 2.7
+	- cyclepaintings 3.5
+	- detailab 2.6.3+1.21-fabric
+	- dismountentity 3.3
+	- do_a_barrel_roll 3.6.1+1.21
+	   \-- fabric-permissions-api-v0 0.2-SNAPSHOT
+	- doubledoors 5.8
+	- eatinganimationid 1.21+1.9.72
+	- elytratrims 3.2.0
+	   \-- mixinsquared 0.1.2-beta.4
+	- emojitype 2.2.5+1.21
+	- enchant-tooltips 1.0.1
+	- expanded_armor_enchanting 1.0.8
+	- expanded_axe_enchanting 1.0.9
+	- expanded_trident_enchanting 1.0.9
+	- expanded_weapon_enchanting 1.0.8
+	- explorerscompass 1.21-2.2.5-fabric
+	- explorify 1.6.1
+	- extractpoison 3.3
+	- fabric-api 0.100.4+1.21
+	   |-- fabric-api-base 0.4.42+6573ed8cd1
+	   |-- fabric-api-lookup-api-v1 1.6.67+b5597344d1
+	   |-- fabric-biome-api-v1 13.0.28+6fc22b99d1
+	   |-- fabric-block-api-v1 1.0.22+0af3f5a7d1
+	   |-- fabric-block-view-api-v2 1.0.10+6573ed8cd1
+	   |-- fabric-blockrenderlayer-v1 1.1.52+0af3f5a7d1
+	   |-- fabric-client-tags-api-v1 1.1.15+6573ed8cd1
+	   |-- fabric-command-api-v1 1.2.48+f71b366fd1
+	   |-- fabric-command-api-v2 2.2.27+6a6dfa19d1
+	   |-- fabric-commands-v0 0.2.65+df3654b3d1
+	   |-- fabric-content-registries-v0 8.0.14+b5597344d1
+	   |-- fabric-convention-tags-v1 2.0.15+7f945d5bd1
+	   |-- fabric-convention-tags-v2 2.3.2+78017270d1
+	   |-- fabric-crash-report-info-v1 0.2.29+0af3f5a7d1
+	   |-- fabric-data-attachment-api-v1 1.1.24+6a6dfa19d1
+	   |-- fabric-data-generation-api-v1 20.2.9+16c4ae25d1
+	   |-- fabric-dimensions-v1 4.0.0+6fc22b99d1
+	   |-- fabric-entity-events-v1 1.6.12+6fc22b99d1
+	   |-- fabric-events-interaction-v0 0.7.10+e633f883d1
+	   |-- fabric-game-rule-api-v1 1.0.52+6573ed8cd1
+	   |-- fabric-item-api-v1 11.0.0+afdfc921d1
+	   |-- fabric-item-group-api-v1 4.1.2+78017270d1
+	   |-- fabric-key-binding-api-v1 1.0.47+0af3f5a7d1
+	   |-- fabric-keybindings-v0 0.2.45+df3654b3d1
+	   |-- fabric-lifecycle-events-v1 2.3.11+8f3583aed1
+	   |-- fabric-loot-api-v2 3.0.11+6573ed8cd1
+	   |-- fabric-message-api-v1 6.0.13+6573ed8cd1
+	   |-- fabric-model-loading-api-v1 2.0.0+fe474d6bd1
+	   |-- fabric-networking-api-v1 4.2.0+ab7edbacd1
+	   |-- fabric-object-builder-api-v1 15.1.12+d1321076d1
+	   |-- fabric-particles-v1 4.0.2+6573ed8cd1
+	   |-- fabric-recipe-api-v1 5.0.10+65089712d1
+	   |-- fabric-registry-sync-v0 5.0.23+78017270d1
+	   |-- fabric-renderer-api-v1 3.3.0+0ae0b97dd1
+	   |-- fabric-renderer-indigo 1.6.5+48fb1586d1
+	   |-- fabric-renderer-registries-v1 3.2.67+df3654b3d1
+	   |-- fabric-rendering-data-attachment-v1 0.3.48+73761d2ed1
+	   |-- fabric-rendering-fluids-v1 3.1.6+b5597344d1
+	   |-- fabric-rendering-v0 1.1.70+df3654b3d1
+	   |-- fabric-rendering-v1 5.0.4+5a8c785ed1
+	   |-- fabric-resource-conditions-api-v1 4.2.1+d153f344d1
+	   |-- fabric-resource-loader-v0 1.1.5+78017270d1
+	   |-- fabric-screen-api-v1 2.0.24+b5597344d1
+	   |-- fabric-screen-handler-api-v1 1.3.80+b5597344d1
+	   |-- fabric-sound-api-v1 1.0.23+6573ed8cd1
+	   |-- fabric-transfer-api-v1 5.1.15+3dccd343d1
+	   \-- fabric-transitive-access-wideners-v1 6.0.12+6573ed8cd1
+	- fabric-language-kotlin 1.11.0+kotlin.2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-reflect 2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.0.0
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.24.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.8.1
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.8.1
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.6.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.6.3
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.6.3
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.6.3
+	- fabricloader 0.15.11
+	   \-- mixinextras 0.3.5
+	- fixedanvilrepaircost 3.3
+	- foodplusid 2.31+1.21
+	- forgivingvoid 21.0.2
+	- geckolib 4.5.6
+	- grassseeds 3.2
+	- handcrafted 4.0.1
+	- healingcampfire 6.0
+	- hopobetterruinedportal 1.4.2
+	- inventorytotem 3.2
+	- itemphysiclite 1.6.4
+	- jade 15.1.0+fabric
+	- jamlib 1.0.9+1.21
+	   \-- blue_endless_jankson 1.2.3
+	- java 21
+	- jei 19.0.0.11
+	- justenoughbreeding 1.2.4
+	- justenoughprofessions 4.0.0
+	- keepmysoiltilled 2.3
+	- lavender 0.1.10+1.21
+	   |-- lavender-md 0.1.1+1.21
+	   \-- lavender-md-owo-ui 0.1.1+1.21
+	- lolmblv 1.5.5
+	- lolmct 1.2.8
+	- lolmcv 1.5.6
+	- lolmfv 1.0.3
+	- mclogs 1.5.0
+	   \-- gs_mclo_api 4.0.1
+	- minecraft 1.21
+	- modelfix 1.21-1.6
+	- modmenu 11.0.1
+	- morediscs 1.21-34-fabric
+	- mousetweaks 2.26
+	- mr_battle_towers 1.1.1
+	- mr_cherry_villages 1.0.8
+	- mr_daycounter 1.21
+	- mr_enchantments_encore 1.3
+	- mr_infinity_mending 2
+	- mr_katters_structuresonlydungeon 1.10
+	- mr_lithosphere 1.2
+	- mr_qraftys_endvillages 2.2
+	- mr_reimagined_trims 1.1.1
+	- mr_true_ending 1-v1.1.2a
+	- mr_vanilla_fireflies 1.0.1
+	- mru 0.4.4+1.21
+	- natures_spirit 1.5.3-1.21
+	- naturescompass 1.21-2.2.6-fabric
+	- nears 2.0.6
+	- noisium 2.2.0+mc1.21
+	   \-- mixinextras 0.3.5
+	- notenoughanimations 1.7.4
+	- nullscape 1.2.6
+	- omnihopper 2.3.2+1.21
+	   \-- cooldown-coordinator 0.7.2
+	- owo 0.12.10+1.21
+	   |-- io_wispforest_endec 0.1.0
+	   |-- io_wispforest_endec_gson 0.1.0
+	   |-- io_wispforest_endec_jankson 0.1.0
+	   \-- io_wispforest_endec_netty 0.1.0
+	- pearfection 1.2.3
+	   \-- terraform-wood-api-v1 11.0.0-alpha.1
+	- placeholder-api 2.4.0+1.21
+	- polymer-bundled 0.9.2+1.21
+	   |-- polymer-autohost 0.9.2+1.21
+	   |-- polymer-blocks 0.9.2+1.21
+	   |-- polymer-common 0.9.2+1.21
+	   |    \-- packet_tweaker 0.5.4+1.20.6
+	   |-- polymer-core 0.9.2+1.21
+	   |    |-- polymer-networking 0.9.2+1.21
+	   |    |    \-- polymer-common 0.9.2+1.21
+	   |    |         \-- packet_tweaker 0.5.4+1.20.6
+	   |    \-- polymer-registry-sync-manipulator 0.9.2+1.21
+	   |-- polymer-resource-pack 0.9.2+1.21
+	   |    \-- polymer-common 0.9.2+1.21
+	   |         \-- packet_tweaker 0.5.4+1.20.6
+	   \-- polymer-virtual-entity 0.9.2+1.21
+	        \-- polymer-common 0.9.2+1.21
+	             \-- packet_tweaker 0.5.4+1.20.6
+	- quad 1.2.7
+	- quartzelv 2.3.0+1.21
+	- rain-grow 1.2
+	- randomvillagenames 3.6
+	- reeses-sodium-options 1.7.2+mc1.21
+	- reinfbarrel 2.5.1+1.21
+	   \-- reinfcore 4.0.1+1.21
+	- reinfchest 3.0.1+1.21
+	   \-- reinfcore 4.0.1+1.21
+	- reinfshulker 3.0.1+1.21
+	   \-- reinfcore 4.0.1+1.21
+	- replantingcrops 5.3
+	- resourcefulconfig 3.0.2
+	- resourcefullib 3.0.9
+	   |-- com_teamresourceful_bytecodecs 1.1.2
+	   \-- com_teamresourceful_yabn 1.0.3
+	- rrls 5.0.0+mc1.21-fabric
+	- sculk_expansion_mr 1.3.3
+	- shulkerboxtooltip 5.0.2+1.21
+	- silk-all 1.10.7
+	   |-- silk-commands 1.10.7
+	   |-- silk-core 1.10.7
+	   |-- silk-game 1.10.7
+	   |-- silk-igui 1.10.7
+	   |-- silk-nbt 1.10.7
+	   |-- silk-network 1.10.7
+	   \-- silk-persistence 1.10.7
+	- sit 1.21-28
+	- skinlayers3d 1.6.6
+	- snowundertrees 2.4.0+1.21
+	- sodium 0.5.11+mc1.21
+	- sodium-extra 0.5.7+mc1.21
+	   \-- caffeineconfig 1.3.0+1.17
+	- spidersproducewebs 3.4
+	- terrablender 4.0.0.1
+	   |-- com_electronwill_night-config_core 3.6.7
+	   \-- com_electronwill_night-config_toml 3.6.7
+	- terrestria 7.0.0
+	   |-- biolith 3.0.0-alpha.1
+	   |-- terraform-biome-remapper-api-v1 11.0.0-alpha.1
+	   |-- terraform-config-api-v1 11.0.0-alpha.1
+	   |-- terraform-dirt-api-v1 11.0.0-alpha.1
+	   |-- terraform-shapes-api-v1 11.0.0-alpha.1
+	   |-- terraform-surfaces-api-v1 11.0.0-alpha.1
+	   |-- terraform-tree-api-v1 11.0.0-alpha.1
+	   |-- terraform-wood-api-v1 11.0.0-alpha.1
+	   |-- terrestria-client 7.0.0
+	   |-- terrestria-common 7.0.0
+	   \-- terrestria-worldgen 7.0.0
+	- tool_trims 2.1.3
+	- treeharvester 8.9
+	- veinminer 2.0.7
+	   |-- de_miraculixx_core 2.0.7
+	   \-- fabric-permissions-api-v0 0.2-SNAPSHOT
+	- visuality 0.7.6+1.21
+	- visualoverhaul 5.2.1
+	   \-- midnightlib 1.5.7
+	- weakerspiderwebs 3.6
+	- woodenhopper 1.21-3.0.0.0
+	- woodenshears 1.21-3.0.1.0
+	- wwoo 2.3.4
+	- xaerominimap 24.2.1
+	- xaeroworldmap 1.38.8
+	- xaerozoomout 2.0.0
+	- yet_another_config_lib_v3 3.5.0+1.21-fabric
+	   |-- com_twelvemonkeys_common_common-image 3.10.0
+	   |-- com_twelvemonkeys_common_common-io 3.10.0
+	   |-- com_twelvemonkeys_common_common-lang 3.10.0
+	   |-- com_twelvemonkeys_imageio_imageio-core 3.10.0
+	   |-- com_twelvemonkeys_imageio_imageio-metadata 3.10.0
+	   |-- com_twelvemonkeys_imageio_imageio-webp 3.10.0
+	   |-- org_quiltmc_parsers_gson 0.2.1
+	   \-- org_quiltmc_parsers_json 0.2.1
+	- zoomify 2.14.0+1.21
+	   \-- com_akuleshov7_ktoml-core-jvm 0.5.1
+[16:36:28] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/{COMPUTER_USERNAME}/AppData/Roaming/com.modrinth.theseus/meta/libraries/net/fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[16:36:28] [main/INFO]: Compatibility level set to JAVA_16
+[16:36:28] [main/INFO]: Compatibility level set to JAVA_21
+[16:36:29] [main/INFO]: Loaded configuration file for Sodium: 42 options available, 0 override(s) found
+[16:36:29] [main/INFO]: Loaded configuration file for Sodium Extra: 35 options available, 0 override(s) found
+[16:36:30] [main/WARN]: Error loading class: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage)
+[16:36:30] [main/WARN]: Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org/jetbrains/annotations/ApiStatus$Internal)
+[16:36:30] [main/WARN]: Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org/jetbrains/annotations/ApiStatus$Internal)
+[16:36:30] [main/INFO]: Searching for graphics cards...
+[16:36:30] [main/INFO]: Found graphics adapter: AdapterInfo{vendor=AMD, description='AMD Radeon(TM) Graphics', adapterType=0x00002323, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\u0400644.inf_amd64_9691c8ee1bbfcbb7\B399690\atig6pxx.dll', openglIcdVersion=31.0.24002.92}
+[16:36:30] [main/INFO]: Found graphics adapter: AdapterInfo{vendor=NVIDIA, description='NVIDIA GeForce RTX 4070', adapterType=0x0000031B, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_cc569e59ca39c5fe\nvoglv64.dll', openglIcdVersion=32.0.15.5599}
+[16:36:30] [main/WARN]: Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]
+[16:36:30] [main/WARN]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[16:36:31] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[16:36:32] [Datafixer Bootstrap/INFO]: 226 Datafixer optimizations took 205 milliseconds
+[16:36:32] [main/WARN]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[16:36:37] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:36:37] [Render thread/INFO]: Setting user: {MINECRAFT_USERNAME}
+[16:36:37] [Render thread/INFO]: [Collective] JSON file 'area_names.json' generation requested by mod 'areas'.
+[16:36:38] [Render thread/INFO]: Biolith for Fabric is initializing...
+[16:36:38] [Render thread/INFO]: Enabling Biolith's TerraBlender compatibility layer.
+[16:36:38] [Render thread/INFO]: Enabling Cinderscapes' Biolith worldgen module.
+[16:36:38] [Render thread/INFO]: Loading Collective version 7.68.
+[16:36:38] [Render thread/ERROR]: No data fixer registered for chain_knot
+[16:36:38] [Render thread/INFO]: Initialized entity types.
+[16:36:38] [Render thread/INFO]: Register Custom Payloads for Networking.
+[16:36:38] [Cicada thread 0/INFO]: [cicada] Hello, anyone there?
+[16:36:38] [Cicada thread 0/INFO]: [do_a_barrel_roll] I'm here, ready to rumble!
+[16:36:38] [Cicada thread 0/INFO]: [omnihopper] Hey there peeps!
+[16:36:38] [Render thread/INFO]: Cooldown Coordinator library loaded.
+[16:36:38] [Render thread/INFO]: [CopperHopper] Configuration loaded: {nbtMatchEnabledIds=minecraft:enchanted_book minecraft:potion minecraft:splash_potion minecraft:lingering_potion minecraft:arrow minecraft:tipped_arrow minecraft:spectral_arrow}
+[16:36:38] [Render thread/INFO]: [CopperHopper] Initialized.
+[16:36:38] [Render thread/INFO]: [STDOUT]: EmojiType initialized!
+[16:36:39] [Render thread/ERROR]: No data fixer registered for handcrafted
+[16:36:39] [Render thread/INFO]: Initializing JamLib on Fabric
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: sugi_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: windswept_sugi_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: blooming_sugi_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: lavender_fields
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: eroded_river
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: marsh
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: bamboo_wetlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: wisteria_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: redwood_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: aspen_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: maple_woodlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: golden_wilds
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: marigold_meadows
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: fir_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: snowy_fir_forest
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: cypress_fields
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: carnation_fields
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: stratified_desert
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: blooming_dunes
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: lively_dunes
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: drylands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: wooded_drylands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: xeric_plains
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: white_cliffs
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: prairie
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: oak_savanna
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: heather_fields
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: tundra
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: alpine_clearings
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: alpine_highlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: coniferous_covert
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: amber_covert
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: boreal_taiga
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: tropical_shores
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: tropical_woods
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: sparse_tropical_woods
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: tropical_basin
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: arid_savanna
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: scorched_dunes
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: flowering_shrubland
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: shrubland
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: arid_highlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: shrubby_highlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: woody_highlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: red_peaks
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: dusty_slopes
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: snowcapped_red_peaks
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: sleeted_slopes
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: blooming_highlands
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: chaparral
+[16:36:39] [Render thread/INFO]: [STDOUT]: Registered Resource Key for biome: floral_ridges
+[16:36:39] [Render thread/INFO]: terra_ferax_frequency = 4
+[16:36:39] [Render thread/INFO]: terra_solaris_frequency = 4
+[16:36:39] [Render thread/INFO]: terra_flava_frequency = 4
+[16:36:39] [Render thread/INFO]: terra_laeta_frequency = 4
+[16:36:39] [Render thread/INFO]: has_sugi_forest = true
+[16:36:39] [Render thread/INFO]: has_eroded_river = true
+[16:36:39] [Render thread/INFO]: has_marsh = true
+[16:36:39] [Render thread/INFO]: has_bamboo_wetlands = true
+[16:36:39] [Render thread/INFO]: has_wisteria_forest = true
+[16:36:39] [Render thread/INFO]: has_redwood_forest = true
+[16:36:39] [Render thread/INFO]: has_aspen_forest = true
+[16:36:39] [Render thread/INFO]: has_maple = true
+[16:36:39] [Render thread/INFO]: has_fir = true
+[16:36:39] [Render thread/INFO]: has_cypress_fields = true
+[16:36:39] [Render thread/INFO]: has_lively_dunes = true
+[16:36:39] [Render thread/INFO]: has_drylands = true
+[16:36:39] [Render thread/INFO]: has_white_cliffs = true
+[16:36:39] [Render thread/INFO]: has_tropical_shores = true
+[16:36:39] [Render thread/INFO]: has_xeric_plains = true
+[16:36:39] [Render thread/INFO]: has_larch = true
+[16:36:39] [Render thread/INFO]: has_oak_savanna = true
+[16:36:39] [Render thread/INFO]: has_mahogany = true
+[16:36:39] [Render thread/INFO]: has_arid = true
+[16:36:39] [Render thread/INFO]: has_shrublands = true
+[16:36:39] [Render thread/INFO]: has_steppe = true
+[16:36:39] [Render thread/INFO]: [STDOUT]: Thanks for viewing your messages
+[16:36:40] [Render thread/INFO]: Loading Noisium.
+[16:36:40] [Render thread/INFO]: dead people should put things in their grave, I have bills to pay - Blodgharm
+[16:36:40] [Render thread/INFO]: pearfection has been initialized.
+[16:36:40] [Render thread/INFO]: [Quad] Initialising the Quad mod power! >:P
+[16:36:40] [Render thread/INFO]: [Quad] loaded default fuel values
+[16:36:40] [Render thread/INFO]: [Quad] loaded quad fuel tags
+[16:36:40] [Render thread/INFO]: Initialized RainGrow
+[16:36:40] [Render thread/INFO]: [ShulkerBoxTooltip] Could not find configuration file, creating default file
+[16:36:40] [Render thread/INFO]: Initializing Silk
+[16:36:40] [Render thread/INFO]: Deserializing SnowUnderTreesConfig from 'C:\Users\{COMPUTER_USERNAME}\AppData\Roaming\com.modrinth.theseus\profiles\22222\config\snowundertrees.config.json'
+[16:36:40] [Render thread/INFO]: terra_ferax_frequency = 4
+[16:36:40] [Render thread/INFO]: terra_solaris_frequency = 4
+[16:36:40] [Render thread/INFO]: terra_flava_frequency = 4
+[16:36:40] [Render thread/INFO]: terra_laeta_frequency = 4
+[16:36:40] [Render thread/INFO]: has_sugi_forest = true
+[16:36:40] [Render thread/INFO]: has_eroded_river = true
+[16:36:40] [Render thread/INFO]: has_marsh = true
+[16:36:40] [Render thread/INFO]: has_bamboo_wetlands = true
+[16:36:40] [Render thread/INFO]: has_wisteria_forest = true
+[16:36:40] [Render thread/INFO]: has_redwood_forest = true
+[16:36:40] [Render thread/INFO]: has_aspen_forest = true
+[16:36:40] [Render thread/INFO]: has_maple = true
+[16:36:40] [Render thread/INFO]: has_fir = true
+[16:36:40] [Render thread/INFO]: has_cypress_fields = true
+[16:36:40] [Render thread/INFO]: has_lively_dunes = true
+[16:36:40] [Render thread/INFO]: has_drylands = true
+[16:36:40] [Render thread/INFO]: has_white_cliffs = true
+[16:36:40] [Render thread/INFO]: has_tropical_shores = true
+[16:36:40] [Render thread/INFO]: has_xeric_plains = true
+[16:36:40] [Render thread/INFO]: has_larch = true
+[16:36:40] [Render thread/INFO]: has_oak_savanna = true
+[16:36:40] [Render thread/INFO]: has_mahogany = true
+[16:36:40] [Render thread/INFO]: has_arid = true
+[16:36:40] [Render thread/INFO]: has_shrublands = true
+[16:36:40] [Render thread/INFO]: has_steppe = true
+[16:36:40] [Render thread/INFO]: [STDOUT]: Thanks for viewing your messages
+[16:36:40] [Render thread/INFO]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[16:36:40] [Render thread/INFO]: Registered region minecraft:nether to index 0 for type NETHER
+[16:36:40] [Render thread/INFO]: Registered region natures_spirit:terra_ferax to index 1 for type OVERWORLD
+[16:36:40] [Render thread/INFO]: Registered region natures_spirit:terra_solaris to index 2 for type OVERWORLD
+[16:36:40] [Render thread/INFO]: Registered region natures_spirit:terra_flava to index 3 for type OVERWORLD
+[16:36:40] [Render thread/INFO]: Registered region natures_spirit:terra_mater to index 4 for type OVERWORLD
+[16:36:40] [Render thread/INFO]: Registered region natures_spirit:terra_laeta to index 5 for type OVERWORLD
+[16:36:40] [Render thread/INFO]: Enabling Terrestria's Biolith worldgen module.
+
